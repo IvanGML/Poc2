@@ -1,0 +1,1029 @@
+@import "_variables.less";
+@import "_fonts.less";
+@navToggleBtnColor: @biscay;
+@navIconColor: @brand-amway-red;
+@navBorderColor: @brand-light;
+@navCategoryBorderColor: @brand-med-light;
+@navCategoryBgColor: @brand-lightest;
+@navBaseColor: @brand-amway-blue;
+@navFont: @roboto;
+@navProductsFont: @franklin-medium-cd;
+@navLastItemFont: @source-sans;
+
+@navSubCategoryFont: @source-sans;
+@navSubCategoryBorder: @brand-med-light;
+@navSubCategoryLinkColor: @brand-darkest;
+@navHoverUnderline: @brand-amway-red;
+
+@navMobileBorderColor: @brand-light;
+@navMobileSigninColor: #023e72;
+@navMobileOpenedBgColor: @brand-lightest;
+
+@categoryDropdownWidth: 213px;
+@navMobileWidth: 275px;
+@navSubCategoryHeight: 241px;
+
+@navShadowColor: @brand-med-light;
+
+@bannerFont: @roboto;
+
+@navUserAreaBorder: @blue-zodiac;
+@navUserAreaBorderHighlight: @blumine;
+
+.open-nav .js-mobile-nav-close {
+  background: rgba(0,0,0,.4);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+
+  @media (min-width: @mobile) {
+    display: none;
+  }
+}
+
+.sidebar-toggle-btn {
+  background: @navToggleBtnColor;
+  cursor: pointer;
+  display: inline-block;
+  height: 44px;
+  left: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 44px;
+  z-index: 9999;
+
+  .icon_amway-icons-cancel,
+  .icon_amway-icons-hamburger {
+    color: @white;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .icon_amway-icons-cancel {
+    display: none;
+  }
+
+  @media (min-width: @mobile) {
+    display: none;
+  }
+}
+
+.open-nav .sidebar-toggle-btn {
+
+  .icon_amway-icons-hamburger {
+    display: none;
+  }
+
+  .icon_amway-icons-cancel {
+    display: inline-block;
+  }
+
+  @media (min-width: @mobile) {
+    display: none;
+  }
+}
+
+.open-nav {
+  .icon_amway-icons-open,
+  .icon_amway-icons-minimize,
+  .nav__user-area {
+    @media (min-width: @mobile) {
+      display: none;
+    }
+  }
+
+  .main-nav__item--opened {
+    .main-nav__item-link {
+      @media (min-width: @mobile) {
+        background: none;
+      }
+    }
+  }
+}
+
+.mobile-hidden {
+  @media (max-width: @max-mobile) {
+    display: none;
+  }
+}
+
+.nav {
+  background: @white;
+  bottom: 0;
+  box-shadow: 0 2px 4px 0 fade(@navShadowColor, 25%);
+  left: -@navMobileWidth;
+  position: fixed;
+  top: 0;
+  transform: translateX(0);
+  transition: transform ease-out .5s;
+  width: @navMobileWidth;
+  z-index: 9999;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: @mobile) {
+    background-color: @white;
+    border-bottom: 1px solid @navBorderColor;
+    border-top: 1px solid @navBorderColor;
+    overflow: initial;
+    position: static;
+    transform: initial;
+    width: auto;
+    z-index: 99;
+  }
+
+  &--gray {
+    background: @navMobileOpenedBgColor;
+
+    @media (min-width: @mobile) {
+      background: none;
+    }
+  }
+
+  .container {
+    height: 100%;
+    padding: 0;
+    position: relative;
+
+    @media (min-width: @mobile) {
+    //   .container-flexbox-fixed();
+    }
+  }
+
+  .icon_amway-icons-left-arrowhead,
+  .icon_amway-icons-right-arrowhead {
+    color: @navIconColor;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 23px;
+    z-index: 2;
+
+    @media (min-width: @mobile) {
+      display: none;
+    }
+  }
+
+  &__user-area {
+    background: @navBaseColor;
+    border-bottom: 1px solid @navUserAreaBorder;
+
+    @media (min-width: @mobile) {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      &-item {
+        flex-basis: 50%;
+        line-height: 44px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        // .font-size-mobile(16);
+
+        &--notregistered {
+          &:first-child {
+            border-right: 1px solid @navUserAreaBorderHighlight;
+          }
+
+          &:last-child {
+            border-left: 1px solid @navUserAreaBorder;
+          }
+        }
+
+        &--registered {
+          border: 0;
+          flex-basis: 100%;
+          padding: 0 @global-space;
+        }
+      }
+    }
+
+    &__link,
+    a {
+      color: @white;
+      font-weight: 700;
+      text-decoration: none;
+    //   .font-size-mobile(16);
+    }
+  }
+
+  &__search {
+    display: flex;
+    flex-direction: column;
+
+    &--opened {
+      flex-grow: 1;
+    }
+
+    @media (min-width: @mobile) {
+      display: none;
+    }
+
+    &-box {
+      background: @navBaseColor;
+      border-bottom: 1px solid @navUserAreaBorder;
+      padding: floor(@global-space / 2) @global-space;
+    }
+  }
+}
+
+.open-nav {
+  .nav {
+    transform: translateX(@navMobileWidth);
+
+    @media (min-width: @mobile) {
+      transform: translateX(0);
+    }
+  }
+}
+
+.main-nav,
+.category-nav {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-link {
+      display: block;
+      font-family: @navFont;
+      padding: 12px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+    //   .font-size(15);
+
+      @media (min-width: @mobile) {
+        line-height: 24px;
+        padding: 10px 30px;
+        // .font-size(16);
+      }
+
+      &:hover,
+      &:focus,
+      &:link,
+      &:active,
+      &:visited {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: @mobile) {
+    flex-direction: row;
+    overflow-y: visible;
+    position: relative;
+  }
+
+  &--bottom {
+    border-top: 1px @navMobileBorderColor solid;
+    margin-top: auto;
+
+    @media (min-width: @mobile) {
+      display: none;
+    }
+  }
+
+  .icon {
+    line-height: 0;
+    vertical-align: top;
+  }
+
+  .icon_amway-icons-hamburger:before {
+    display: none;
+
+    @media (min-width: @mobile) {
+      color: @navIconColor;
+      display: inline-block;
+      line-height: 24px;
+      padding-right: 5px;
+    //   .font-size(28);
+    }
+  }
+
+  .icon_amway-icons-open:before,
+  .icon_amway-icons-minimize:before {
+    @media (min-width: @mobile) {
+      display: none;
+    }
+  }
+
+  .icon_amway-icons-open:before {
+    color: @navIconColor;
+    font-size: 24px;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .icon_amway-icons-minimize:before {
+    color: @navIconColor;
+    display: none;
+    font-size: 24px;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .icon-hamburger {
+    display: none;
+
+    @media (min-width: @mobile) {
+      display: inline-block;
+      fill: @navIconColor;
+      height: 24px;
+      position: relative;
+      top: -2px;
+      vertical-align: middle;
+      width: 24px;
+    }
+  }
+
+  &__item {
+    background: @white;
+
+    &:not(.mobile-hidden) + & {
+      border-top: 1px @navMobileBorderColor solid;
+    }
+
+    @media (min-width: @mobile) {
+      align-items: stretch;
+      background: none;
+      border-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      position: static;
+    }
+
+    &--opened &-link {
+      background: @navMobileOpenedBgColor;
+
+      & .icon_amway-icons-open:before {
+        display: none;
+      }
+
+      & .icon_amway-icons-minimize:before {
+        display: inline;
+      }
+    }
+
+    &--opened &-wrapper {
+      display: block;
+    }
+
+    &-link {
+      color: @navBaseColor;
+      text-decoration: none;
+
+      @media (min-width: @mobile) {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        padding: 10px 15px;
+        position: relative;
+      }
+
+      &:link,
+      &:hover {
+        color: @navBaseColor;
+        text-decoration: none;
+      }
+    }
+
+    &:first-child {
+
+      @media (min-width: @mobile) {
+        border-left: 1px solid @navBorderColor;
+        border-right: 1px solid @navBorderColor;
+      }
+
+      .main-nav__item-link {
+        position: relative;
+
+        @media (min-width: @mobile) {
+          padding-left: 11px;
+          padding-right: 15px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .main-nav__item-link {
+        @media (min-width: @mobile) {
+          padding-left: 30px;
+        }
+      }
+    }
+
+    &:hover {
+      .main-nav__item-link:after {
+        @media (min-width: @mobile) {
+          background: @navHoverUnderline;
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .main-nav__item-wrapper {
+        @media (min-width: @mobile) {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    &-wrapper {
+      border-bottom: 2px @navMobileBorderColor solid;
+      display: none;
+
+      &--language {
+        display: block;
+        border-bottom: none;
+      }
+
+      @media (min-width: @mobile) {
+        background: none;
+        border-bottom: 0;
+        display: block;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        transition: opacity ease-in-out .15s, background ease-in-out .15s;
+        visibility: hidden;
+        z-index: 99;
+
+        &:hover {
+          background: @navCategoryBgColor;
+        }
+      }
+    }
+
+    &--last {
+      display: none;
+
+      @media (min-width: @mobile) {
+        display: none;
+      }
+
+      @media (min-width: @tablet) {
+        border-bottom-width: 0;
+        display: inline-block;
+        flex-grow: 1;
+        font-family: @navLastItemFont;
+        line-height: 24px;
+        padding: 10px 0;
+        position: relative;
+        text-align: right;
+        // .font-size(14);
+      }
+    }
+  }
+}
+
+.main-nav__item--opened {
+  .mobile-hidden {
+    @media (max-width: @max-mobile) {
+      display: none;
+    }
+  }
+}
+
+.category-nav {
+  padding: 0;
+
+  @media (min-width: @mobile) {
+    border-bottom: 1px solid @navCategoryBorderColor;
+    box-shadow: -2px 2px 4px 0 fade(@navShadowColor, 25%);
+    display: block;
+    padding: 0;
+    width: @categoryDropdownWidth;
+
+    &:hover &__item {
+      box-shadow: inset -2px 0px 4px 0 fade(@navShadowColor, 25%);
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__item {
+    & + & {
+      border-top: 1px @navMobileBorderColor solid;
+    }
+
+    @media (min-width: @mobile) {
+      background: @white;
+      border-left: 1px solid @navCategoryBorderColor;
+      border-right: 1px solid @navCategoryBorderColor;
+      border-top-width: 0;
+      box-sizing: border-box;
+      padding-left: 0;
+      width: @categoryDropdownWidth;
+    }
+
+    &:nth-child(1) .category-nav__item-link {
+      color: @sea-green;
+    }
+
+    &:nth-child(2) .category-nav__item-link {
+      color: @brand-light-blue;
+    }
+
+    &:nth-child(3) .category-nav__item-link {
+      color: @brand-accent-3;
+    }
+
+    &:nth-child(4) .category-nav__item-link {
+      color: @brand-accent-2;
+    }
+
+    &&--language {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .category-nav__item-link {
+        color: @navBaseColor;
+      }
+    }
+
+    &:hover {
+      @media (min-width: @mobile) {
+        background: @navCategoryBgColor;
+        border-right: 0;
+
+        .sub-category-col {
+          display: block;
+        }
+
+        &:after {
+          background: @navCategoryBgColor;
+          content: '';
+          height: 59px;
+          margin: -59px 0 0 211px;
+          position: absolute;
+          width: 2px;
+          z-index: 100;
+        }
+      }
+
+      .category-nav__item-wrapper {
+        @media (min-width: @mobile) {
+          display: block;
+        }
+      }
+    }
+
+    &--opened {
+      border-top: 0;
+    }
+
+    &--opened &-wrapper {
+      display: block;
+    }
+
+    &-link {
+      color: @white;
+      position: relative;
+      text-decoration: none;
+
+      @media (min-width: @mobile) {
+        align-items: center;
+        border-top: 1px solid @navCategoryBorderColor;
+        display: flex;
+        height: 100%;
+        line-height: 23px;
+        padding-bottom: 18px;
+        padding-top: 18px;
+      }
+
+      .icon_amway-icons-right-arrowhead {
+        right: 15px;
+
+        @media (min-width: @mobile) {
+          display: none;
+        }
+      }
+
+      .icon_amway-icons-left-arrowhead {
+        display: none;
+        left: 11px;
+
+        @media (min-width: @mobile) {
+          display: none;
+        }
+      }
+
+      a {
+        color: inherit;
+
+        &:link {
+          text-decoration: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &--opened &-link {
+      padding-left: 35px ;
+
+      .icon_amway-icons-right-arrowhead {
+        display: none;
+      }
+
+      .icon_amway-icons-left-arrowhead {
+        display: inline;
+      }
+    }
+
+    &-wrapper {
+      background: @white;
+      display: none;
+
+      @media (min-width: @mobile) {
+        background: @navCategoryBgColor;
+        border-bottom: 1px solid @navCategoryBorderColor;
+        border-right: 1px solid @navCategoryBorderColor;
+        border-top: 1px solid @navCategoryBorderColor;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        min-height: 240px;
+        left: @categoryDropdownWidth;
+        padding: 10px 15px 10px 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        &:before {
+          background: @navCategoryBorderColor;
+          bottom: 0;
+          content: '';
+          left: -1px;
+          position: absolute;
+          top: 0;
+          width: 1px;
+        }
+      }
+    }
+  }
+}
+
+.sub-category-col {
+  border-top: 1px @navMobileBorderColor solid;
+  position: relative;
+
+  @media (min-width: @mobile) {
+    border-top: 0;
+    display: none;
+    position: static;
+  }
+
+  &:hover {
+
+    .sub-category-nav {
+      @media (min-width: @mobile) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    @media (min-width: @mobile) {
+      padding-right: 15px;
+    }
+  }
+
+  &-2 {
+    @media (min-width: @mobile) {
+      border-top: 0;
+      flex: 2;
+
+      &:not(:last-child) {
+        @media (min-width: @mobile) {
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+
+  .icon_amway-icons-left-arrowhead {
+    display:none;
+    left: 11px;
+
+    @media (min-width: @mobile) {
+      display: none;
+    }
+  }
+
+  .icon_amway-icons-right-arrowhead {
+    right: 15px;
+
+    @media (min-width: @mobile) {
+      display: none;
+    }
+  }
+
+  &--opened {
+    border-top: 0;
+
+    .icon_amway-icons-left-arrowhead {
+      display: inline-block;
+
+      @media (min-width: @mobile) {
+        display: none;
+      }
+    }
+
+    .icon_amway-icons-right-arrowhead {
+      display: none;
+    }
+
+    .sub-category-title {
+      font-weight: bold;
+      padding-left: 35px;
+    }
+
+    .sub-category-nav {
+      display: block;
+      position: static;
+    }
+
+    .sub-category-nav__item:last-child {
+      border-bottom: 1px @navMobileBorderColor solid;
+    }
+  }
+}
+
+.sub-category-title {
+  cursor: pointer;
+  display: block;
+  font-family: @navSubCategoryFont;
+  padding: 12px 15px;
+  position: relative;
+  text-decoration: none;
+//   .font-size(15);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (min-width: @mobile) {
+    color: @navSubCategoryLinkColor;
+    display: inline-block;
+    font-family: @navSubCategoryFont;
+    font-weight: bold;
+    padding: 8px 0;
+    text-decoration: none;
+    word-wrap: break-word;
+    // .font-size(16);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link {
+    color: @navSubCategoryLinkColor;
+    text-decoration: none;
+
+    &:hover {
+      color: @navSubCategoryLinkColor;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sub-category-nav {
+  background: @brand-lightest;
+  display: none;
+  max-height: ~"calc(100vh - 45px)";
+  overflow-y: auto;
+  padding: 0;
+
+  @media (min-width: @mobile) {
+    border-left: 1px @navSubCategoryBorder solid;
+    bottom: 18px;
+    display: block;
+    left: 210px;
+    opacity: 0;
+    padding: 0 0 0 30px;
+    position: absolute;
+    right: 0;
+    top: 18px;
+    transition: opacity ease-in-out .15s;
+    visibility: hidden;
+  }
+
+  & + & {
+    left: 565px;
+    border-left: 0;
+    padding: 0;
+  }
+
+  &.list-2-col {
+
+    @media (min-width: @tablet) {
+      -moz-column-count: 2;
+      column-count: 2;
+      -moz-column-fill: auto;
+      column-fill: auto;
+    }
+  }
+
+  &__item {
+    border-top: 1px @navMobileBorderColor solid;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 12px @global-space;
+
+    @media (min-width: @mobile) {
+      border-top: 0;
+      padding: 0;
+    }
+
+    @num: attr(data-products-num);
+
+    &[data-products-num]:after {
+      content: " (" @num ")";
+    //   .font-size(15);
+
+      @media (min-width: @mobile) {
+        // .font-size(14);
+      }
+    }
+
+    &[data-products-num=""]:after {
+      content: "";
+    }
+
+    & a {
+      color: @navSubCategoryLinkColor;
+      text-decoration: none;
+    //   .font-size(15);
+
+      @media (min-width: @mobile) {
+        border-top: 0;
+        display: inline-block;
+        line-height: 24px;
+        padding: 0;
+        // .font-size(14);
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__banner {
+
+    &-link {
+      display: none;
+
+      @media (min-width: @mobile) {
+        display: inline;
+      }
+    }
+
+    &-image {
+      max-height: 100%;
+      width: ~"calc(100% - 30px)";
+
+      &--tablet {
+
+        @media (min-width: @mobile) {
+          display: inline;
+        }
+
+        @media (min-width: @tablet) {
+          display: none;
+        }
+      }
+
+      &--desktop {
+
+        @media (min-width: @mobile) {
+          display: none;
+        }
+
+        @media (min-width: @tablet) {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.nav-profile {
+  background: @navMobileOpenedBgColor;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  @media (min-width: @mobile) {
+    display: none;
+  }
+
+  & .user-area__list {
+    max-height: calc(~"100vh - 45px");
+    overflow-y: auto;
+  }
+
+  & .user-area__list-item,
+  & .user-area__list-title {
+    background: @white;
+    border-bottom: 1px solid @navMobileBorderColor;
+    border-top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    // .font-size-mobile(15);
+
+    & + .user-area__list-item {
+      border-top: 0;
+    }
+
+    &--myprofile {
+      border-color: @navCategoryBorderColor;
+      cursor: pointer;
+      font-weight: 700;
+      padding: 12px @global-space 12px 35px;
+    }
+
+    &--log-out {
+      border-top: 2px solid @navMobileBorderColor;
+    }
+
+    & a,
+    & span {
+      color: @navSubCategoryLinkColor;
+      display: block;
+      font-weight: 400;
+      line-height: 20px;
+      padding: 12px @global-space;
+      text-decoration: none;
+    }
+  }
+
+  .icon_amway-icons-left-arrowhead {
+    left: 11px;
+    top: 16px;
+    // .font-size-mobile(16);
+  }
+}
