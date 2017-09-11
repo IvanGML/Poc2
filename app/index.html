@@ -27,462 +27,543 @@
 </head>
 
 <body>
+	<div style="width: 1200px; margin: 0 auto;">
+		<nav class="nav" role="navigation">
+			<div class="container">
+				<div class="nav__inner">
+					<div class="nav__user-area">
+						<ul class="nav__user-area__list">
+							<li class="nav__user-area__list-item nav__user-area__list-item--notregistered">
+								<a href="/en/sso/start_authorization/?site=lynxswe" class="nav__user-area__link--sign-in">
+									Sign in</a>
+							</li>
+							<li class="nav__user-area__list-item nav__user-area__list-item--notregistered">
+								<a href="/en/registrationSelection" class="nav__user-area__link">
+						Register</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="main-nav js-main-nav">
+						<li class="main-nav__item js-main-nav-item">
+							<a href="#" class="main-nav__item-link js-main-nav__item-link">
+								<i class="icon icon_amway-icons-hamburger"></i> Shop<i class="icon icon_amway-icons-open"></i><i class="icon icon_amway-icons-minimize"></i>
+							</a>
+							<div class="main-nav__item-wrapper">
+								<ul class="category-nav">
+									<li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
+											<i class="icon icon_amway-icons-left-arrowhead"></i>
+											Nutrition<i class="icon icon_amway-icons-right-arrowhead"></i>
+										</span>
+										<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
+											<div class="sub-category-col">
+												<span class="sub-category-title " data-attr="Cat1SubCatLevel1">
+													<i class="icon icon_amway-icons-left-arrowhead"></i>
+													<a class="sub-category-title__link" href="/en">Explore Nutrition</a>
+													<i class="icon icon_amway-icons-right-arrowhead"></i>
+												</span>
+												<div class="sub-category-nav">
+													<div class="main-nav-banner">
 
-	<nav class="nav" role="navigation">
-		<div class="container">
-			<div class="nav__inner">
-				<div class="nav__user-area">
-					<ul class="nav__user-area__list">
-						<li class="nav__user-area__list-item nav__user-area__list-item--notregistered">
-							<a href="/en/sso/start_authorization/?site=lynxswe" class="nav__user-area__link--sign-in">
-								Sign in</a>
+														<div class="main-nav-banner__background">
+															<picture>
+																<source media="(max-width: 767px)" srcset="/medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w4ODk4NXxpbWFnZS9wbmd8aW1hZ2VzL2hlYi9oOGUvODc5NjE4ODUwODE5MC5wbmd8NGU2ZmFkZjFhOTE3MjgzMGZlYjU3OTk0YjUzYjBhN2ZiMjQwMWI3ZThhODE2ODNjOTRjMDBkNGVhNDAyMGFjMQ, /medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MzU1NXxpbWFnZS9wbmd8aW1hZ2VzL2g2ZC9oZmYvODc5NjE4ODU3MzcyNi5wbmd8OGM3ODExOGNjMzZjYzZhNjIyZDgwZjM1OGQyMzQwNjJkN2UyMmYzM2ExMjBlYjgzNjE5OTBiYmE4MWFmZjk3Yw 2x">
+																<source media="(max-width: 991px)" srcset="/medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w4ODk4NXxpbWFnZS9wbmd8aW1hZ2VzL2hlYi9oOGUvODc5NjE4ODUwODE5MC5wbmd8NGU2ZmFkZjFhOTE3MjgzMGZlYjU3OTk0YjUzYjBhN2ZiMjQwMWI3ZThhODE2ODNjOTRjMDBkNGVhNDAyMGFjMQ, /medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w4ODk4NXxpbWFnZS9wbmd8aW1hZ2VzL2hlYi9oOGUvODc5NjE4ODUwODE5MC5wbmd8NGU2ZmFkZjFhOTE3MjgzMGZlYjU3OTk0YjUzYjBhN2ZiMjQwMWI3ZThhODE2ODNjOTRjMDBkNGVhNDAyMGFjMQ 2x">
+																<source media="(max-width: 4000px)" srcset="/medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MzU1NXxpbWFnZS9wbmd8aW1hZ2VzL2g2ZC9oZmYvODc5NjE4ODU3MzcyNi5wbmd8OGM3ODExOGNjMzZjYzZhNjIyZDgwZjM1OGQyMzQwNjJkN2UyMmYzM2ExMjBlYjgzNjE5OTBiYmE4MWFmZjk3Yw, /medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxODIyNzh8aW1hZ2UvcG5nfGltYWdlcy9oNWQvaGRmLzg3OTYxODg2MzkyNjIucG5nfDYyN2FiOGJlNmNkMjI4ZGQ0N2U1ZjI4NTIwYTA1ZjdkZjFlY2U2NzhjZGNjYjc3YjA0Y2RlNDA0ZTc3NjViMjI 2x">
+																<img class="sub-category-nav__banner-image" src="" alt="" title="" />
+															</picture>
+														</div>
+														<div class="main-nav-banner__data main-nav-banner__data--right">
+															<div class="main-nav-banner__data-header amw-colored-text amw-colored-text--truvivity">
+																Grow, harvest and process plants on our own certified organic farms</div>
+															<div class="main-nav-banner__data-controls">
+																<a href="/en/Nutrition/c/10239" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat1SubCatLevel2">
+													<i class="icon icon_amway-icons-left-arrowhead"></i>
+													Featured<i
+													class="icon icon_amway-icons-right-arrowhead"></i>
+												</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+													<li class="sub-category-nav__item">
+														<a href="#" title="New">New</a>
+													</li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a>
+													</li>
+													<li class="sub-category-nav__item">
+													</li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Promotions">Promotions</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat1SubCatLevel3">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Categories<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="7">
+														<a href="/en/Foundational Food Supplements/c/10240" title="Foundational food supplements">Foundational food supplements</a></li>
+													<li class="sub-category-nav__item" data-products-num="7">
+														<a href="/en/Immune System/c/10242" title="Targeted food supplements">Targeted food supplements</a></li>
+													<li class="sub-category-nav__item" data-products-num="11">
+														<a href="/en/Active Lifestyle/c/10252" title="Active lifestyle">Active lifestyle</a></li>
+													<li class="sub-category-nav__item" data-products-num="5">
+														<a href="/en/Beauty from within/c/10251" title="Beauty from within">Beauty from within</a></li>
+													<li class="sub-category-nav__item" data-products-num="10">
+														<a href="/en/Food & Beverages/c/10262" title="Food and beverages">Food and beverages</a></li>
+													<li class="sub-category-nav__item" data-products-num="25">
+														<a href="/en/Weight Management/c/10253" title="Weight Management">Weight Management</a></li>
+													<li class="sub-category-nav__item" data-products-num="6">
+														<a href="/en/Accessories/c/10265" title="Accessories">Accessories</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat1SubCatLevel4">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Brands<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="30">
+														<a href="/en/NUTRIWAY™/c/brand_600" title="NUTRIWAY™">NUTRIWAY™</a></li>
+													<li class="sub-category-nav__item" data-products-num="7">
+														<a href="/en/XS™/c/brand_10007" title="XS™">XS™</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel2">
+								<i class="icon icon_amway-icons-left-arrowhead"></i>
+								Beauty<i class="icon icon_amway-icons-right-arrowhead"></i>
+							</span>
+										<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
+											<div class="sub-category-col">
+												<span class="sub-category-title " data-attr="Cat2SubCatLevel1">
+								<i class="icon icon_amway-icons-left-arrowhead"></i>
+								<a class="sub-category-title__link" href="/en">Explore Beauty</a>
+								<i class="icon icon_amway-icons-right-arrowhead"></i>
+							</span>
+												<div class="sub-category-nav">
+													<div class="main-nav-banner">
+
+														<div class="main-nav-banner__background">
+															<picture>
+																<source media="(max-width: 767px)" srcset="/medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyODIyMjB8aW1hZ2UvcG5nfGltYWdlcy9oYmEvaGM2Lzg3OTYxODc1MjUxNTAucG5nfGJlYjllZTlmOWFmODk3NzVmNThjNDZiYmM3YjJjZjMxYmNjNTZhOTQ1MWRiZGI2NDQwMTQxODgyYzBhYmVlYjY, /medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxNjkzNjJ8aW1hZ2UvcG5nfGltYWdlcy9oMjkvaGMwLzg3OTYxODc2MjM0NTQucG5nfDc4MGY2MTgxZWNmZmZjOGM5ZmU4ZGEzZDkyZGQ4MmI0ZWUwZjBmY2YzYThlZjZjMDEwOTgxMmE3YzNkNzEwZTA 2x">
+																<source media="(max-width: 991px)" srcset="/medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyODIyMjB8aW1hZ2UvcG5nfGltYWdlcy9oYmEvaGM2Lzg3OTYxODc1MjUxNTAucG5nfGJlYjllZTlmOWFmODk3NzVmNThjNDZiYmM3YjJjZjMxYmNjNTZhOTQ1MWRiZGI2NDQwMTQxODgyYzBhYmVlYjY, /medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyODIyMjB8aW1hZ2UvcG5nfGltYWdlcy9oYmEvaGM2Lzg3OTYxODc1MjUxNTAucG5nfGJlYjllZTlmOWFmODk3NzVmNThjNDZiYmM3YjJjZjMxYmNjNTZhOTQ1MWRiZGI2NDQwMTQxODgyYzBhYmVlYjY 2x">
+																<source media="(max-width: 4000px)" srcset="/medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxNjkzNjJ8aW1hZ2UvcG5nfGltYWdlcy9oMjkvaGMwLzg3OTYxODc2MjM0NTQucG5nfDc4MGY2MTgxZWNmZmZjOGM5ZmU4ZGEzZDkyZGQ4MmI0ZWUwZjBmY2YzYThlZjZjMDEwOTgxMmE3YzNkNzEwZTA, /medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MzE1MDR8aW1hZ2UvcG5nfGltYWdlcy9oMDIvaDM1Lzg3OTYxODc2NTYyMjIucG5nfGE2MmE3MmI4NTc5NGRhNzI0ODcxNzM3OWI4Y2E2MzM0NDFiOWMyNDJmNjAxZGQ3YTk0ZmI3MzZlZDBkYjQyZjE 2x">
+																<img class="sub-category-nav__banner-image" src="" alt="" title="" />
+															</picture>
+														</div>
+														<div class="main-nav-banner__data main-nav-banner__data--right">
+															<div class="main-nav-banner__data-header amw-colored-text amw-colored-text--truvivity">
+																Grow, harvest and process plants on our own certified organic farms</div>
+															<div class="main-nav-banner__data-controls">
+																<a href="/en/Beauty & Grooming/c/10013" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat2SubCatLevel2">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Categories<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="25">
+														<a href="/en/Hair Care/c/10047" title="Hair Care">Hair Care</a></li>
+													<li class="sub-category-nav__item" data-products-num="14">
+														<a href="/en/Bath and Body/c/10052" title="Bath and Body">Bath and Body</a></li>
+													<li class="sub-category-nav__item" data-products-num="11">
+														<a href="/en/Fragrances/c/10058" title="Fragrances">Fragrances</a></li>
+													<li class="sub-category-nav__item" data-products-num="8">
+														<a href="/en/Men's Grooming/c/10062" title="Men's Grooming">Men's Grooming</a></li>
+													<li class="sub-category-nav__item" data-products-num="8">
+														<a href="/en/Oral Care/c/10063" title="Oral Care">Oral Care</a></li>
+													<li class="sub-category-nav__item" data-products-num="49">
+														<a href="/en/Skincare/c/10136" title="Skincare">Skincare</a></li>
+													<li class="sub-category-nav__item" data-products-num="43">
+														<a href="/en/Make up/c/10143" title="Make-up">Make-up</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat2SubCatLevel3">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Featured<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item">
+														<a href="#" title="New">New</a></li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
+													<li class="sub-category-nav__item">
+													</li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Promotions">Promotions</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat2SubCatLevel4">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Brands<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="5">
+														<a href="/en/ARTISTRY Intensive Skincare™/c/brand_10004" title="ARTISTRY Intensive Skincare™">ARTISTRY Intensive Skincare™</a></li>
+													<li class="sub-category-nav__item" data-products-num="12">
+														<a href="/en/ARTISTRY Youth Xtend™/c/brand_10008" title="ARTISTRY Youth Xtend™">ARTISTRY Youth Xtend™</a></li>
+													<li class="sub-category-nav__item" data-products-num="6">
+														<a href="/en/essentials by ARTISTRY™/c/brand_10069" title="essentials by ARTISTRY™">essentials by ARTISTRY™</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel3">
+								<i class="icon icon_amway-icons-left-arrowhead"></i>
+								Home Life<i class="icon icon_amway-icons-right-arrowhead"></i>
+							</span>
+										<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel1">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Categories<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="10">
+														<a href="/en/Surface Care/c/10070" title="Surface Care">Surface Care</a></li>
+													<li class="sub-category-nav__item" data-products-num="16">
+														<a href="/en/Laundry Care/c/10067" title="Laundry Care">Laundry Care</a></li>
+													<li class="sub-category-nav__item" data-products-num="4">
+														<a href="/en/Dish Care/c/10077" title="Dish Care">Dish Care</a></li>
+													<li class="sub-category-nav__item" data-products-num="26">
+														<a href="/en/Cookware and cutlery/c/10080" title="Cookware and cutlery">Cookware and cutlery</a></li>
+													<li class="sub-category-nav__item" data-products-num="2">
+														<a href="/en/Auxiliary Cleaning/c/10079" title="Auxiliary cleaning">Auxiliary cleaning</a></li>
+													<li class="sub-category-nav__item" data-products-num="11">
+														<a href="/en/Water Treatment System/c/10084" title="Water Treatment System">Water Treatment System</a></li>
+													<li class="sub-category-nav__item" data-products-num="8">
+														<a href="/en/Dispensers and Applicators/c/10078" title="Dispensers and Applicators">Dispensers and Applicators</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel2">
+								<i class="icon icon_amway-icons-left-arrowhead"></i>
+								<a class="sub-category-title__link" href="/en">Explore Home</a>
+								<i class="icon icon_amway-icons-right-arrowhead"></i>
+							</span>
+												<div class="sub-category-nav">
+													<div class="main-nav-banner">
+
+														<div class="main-nav-banner__background">
+															<picture>
+																<source media="(max-width: 767px)" srcset="/medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wzMTUzOTZ8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaGY5Lzg3OTYxODc5MTgzNjYucG5nfGRjOGUxN2U0NDA2MzZiZDkxMmNiNjQwNmZmZTVjNWVhN2U4MTllMTJjMWU0YjBjNTIyZWNiYTljZjc0YjgwMjk, /medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxODE2MTB8aW1hZ2UvcG5nfGltYWdlcy9oMzIvaDkzLzg3OTYxODc5ODM5MDIucG5nfGEyYzkwYWY5MWUwZjZlZmI4OTdkNGZlNjBmMzc4YWQ5NmExM2NlMjI5MGZiYTQxZmI1OTRiYzRmNDZjNGQ1ODc 2x">
+																<source media="(max-width: 991px)" srcset="/medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wzMTUzOTZ8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaGY5Lzg3OTYxODc5MTgzNjYucG5nfGRjOGUxN2U0NDA2MzZiZDkxMmNiNjQwNmZmZTVjNWVhN2U4MTllMTJjMWU0YjBjNTIyZWNiYTljZjc0YjgwMjk, /medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wzMTUzOTZ8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaGY5Lzg3OTYxODc5MTgzNjYucG5nfGRjOGUxN2U0NDA2MzZiZDkxMmNiNjQwNmZmZTVjNWVhN2U4MTllMTJjMWU0YjBjNTIyZWNiYTljZjc0YjgwMjk 2x">
+																<source media="(max-width: 4000px)" srcset="/medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxODE2MTB8aW1hZ2UvcG5nfGltYWdlcy9oMzIvaDkzLzg3OTYxODc5ODM5MDIucG5nfGEyYzkwYWY5MWUwZjZlZmI4OTdkNGZlNjBmMzc4YWQ5NmExM2NlMjI5MGZiYTQxZmI1OTRiYzRmNDZjNGQ1ODc, /medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w2MTc5MjF8aW1hZ2UvcG5nfGltYWdlcy9oNDAvaDYwLzg3OTYxODgwNDk0MzgucG5nfDZjNDMzODQxZDI0NjRkYzI0MmU4NDUxY2U3OTM2YTEzODdlYzA2MjA1ZjlkNGFlNjhjNGI4NmZjYzU2M2I1NmI 2x">
+																<img class="sub-category-nav__banner-image" src="" alt="" title="" />
+															</picture>
+														</div>
+														<div class="main-nav-banner__data main-nav-banner__data--right">
+															<div class="main-nav-banner__data-header amw-colored-text amw-colored-text--truvivity">
+																Grow, harvest and process plants on our own certified organic farms</div>
+															<div class="main-nav-banner__data-controls">
+																<a href="/en/Home/c/10066" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel3">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Featured<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item">
+														<a href="#" title="New">New</a></li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
+													<li class="sub-category-nav__item">
+													</li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Promotions">Promotions</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel4">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Brands<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="11">
+														<a href="/en/eSpring™/c/brand_400" title="eSpring™">eSpring™</a></li>
+													<li class="sub-category-nav__item" data-products-num="26">
+														<a href="/en/iCook™/c/brand_300" title="iCook™">iCook™</a></li>
+													<li class="sub-category-nav__item" data-products-num="39">
+														<a href="/en/Amway Home™/c/brand_10005" title="Amway Home™">Amway Home™</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel4">
+								<i class="icon icon_amway-icons-left-arrowhead"></i>
+								More Products<i class="icon icon_amway-icons-right-arrowhead"></i>
+							</span>
+										<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel1">
+								<i class="icon icon_amway-icons-left-arrowhead"></i>
+								<a class="sub-category-title__link" href="/en">Explore More Products</a>
+								<i class="icon icon_amway-icons-right-arrowhead"></i>
+							</span>
+												<div class="sub-category-nav">
+													<div class="main-nav-banner">
+
+														<div class="main-nav-banner__background">
+															<picture>
+																<source media="(max-width: 767px)" srcset="/medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MTY0MTh8aW1hZ2UvcG5nfGltYWdlcy9oYzIvaDVkLzg3OTYxODg5MDE0MDYucG5nfGQ2ZjY1YmQ2Nzc2NWMwMjI2M2Y3ZmU0Y2IwMzI0YTRiMjYzNjkxNTM1ZTg5ODE3NDJjZWFhM2JhMTM0YzU5Njk, /medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyOTU2NTB8aW1hZ2UvcG5nfGltYWdlcy9oNzIvaGMyLzg3OTYxODg5NjY5NDIucG5nfGEzYjJjZjBlOTQ5OTE2MDgyOWZhOTc3N2I0NjhkNTI0ODZkM2Q5Yzg1ZGYyYzc2NzUxOTA0ZmRjZmMwZDAzZjc 2x">
+																<source media="(max-width: 991px)" srcset="/medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MTY0MTh8aW1hZ2UvcG5nfGltYWdlcy9oYzIvaDVkLzg3OTYxODg5MDE0MDYucG5nfGQ2ZjY1YmQ2Nzc2NWMwMjI2M2Y3ZmU0Y2IwMzI0YTRiMjYzNjkxNTM1ZTg5ODE3NDJjZWFhM2JhMTM0YzU5Njk, /medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MTY0MTh8aW1hZ2UvcG5nfGltYWdlcy9oYzIvaDVkLzg3OTYxODg5MDE0MDYucG5nfGQ2ZjY1YmQ2Nzc2NWMwMjI2M2Y3ZmU0Y2IwMzI0YTRiMjYzNjkxNTM1ZTg5ODE3NDJjZWFhM2JhMTM0YzU5Njk 2x">
+																<source media="(max-width: 4000px)" srcset="/medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyOTU2NTB8aW1hZ2UvcG5nfGltYWdlcy9oNzIvaGMyLzg3OTYxODg5NjY5NDIucG5nfGEzYjJjZjBlOTQ5OTE2MDgyOWZhOTc3N2I0NjhkNTI0ODZkM2Q5Yzg1ZGYyYzc2NzUxOTA0ZmRjZmMwZDAzZjc, /medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxMTEwMDQ3fGltYWdlL3BuZ3xpbWFnZXMvaDU2L2gwMC84Nzk2MTg5MDMyNDc4LnBuZ3w0Y2ZhMzE3YjBjYzVhYzljNmMwZDFhZjRlMzQyNzM2YWI2NDRkNGFiMmE4NmZmZmM2NjYwY2Q2OTY5MzdlMTM0 2x">
+																<img class="sub-category-nav__banner-image" src="" alt="" title="" />
+															</picture>
+														</div>
+														<div class="main-nav-banner__data main-nav-banner__data--right">
+															<div class="main-nav-banner__data-header amw-colored-text amw-colored-text--truvivity">
+																Grow, harvest and process plants on our own certified organic farms</div>
+															<div class="main-nav-banner__data-controls">
+																<a href="/en/More Products/c/10086" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel2">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Categories<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="2">
+														<a href="/en/Amway - One by One/c/10095" title="Amway - One by One">Amway - One by One</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel3">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Brands<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item" data-products-num="39">
+														<a href="/en/Amway Home™/c/brand_10005" title="Amway Home™">Amway Home™</a></li>
+												</ul>
+											</div>
+											<div class="sub-category-col">
+												<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel4">
+															<i class="icon icon_amway-icons-left-arrowhead"></i>
+															Featured<i
+															class="icon icon_amway-icons-right-arrowhead"></i>
+														</span>
+												<ul class="sub-category-nav js-sub-category-nav list-2-col">
+
+													<li class="sub-category-nav__item">
+														<a href="#" title="New">New</a></li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
+													<li class="sub-category-nav__item">
+													</li>
+													<li class="sub-category-nav__item">
+														<a href="#" title="Promotions">Promotions</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</li>
-						<li class="nav__user-area__list-item nav__user-area__list-item--notregistered">
-							<a href="/en/registrationSelection" class="nav__user-area__link">
-					Register</a>
+						<li class="main-nav__item js-main-nav-item">
+							<a href="/en/category/Shop/c/100000?q=:relevance:product_labels:DISCOUNT:product_labels:PV_PROMOTION:product_labels:GIFT_WITH_PURCHASE:product_labels:SPECIAL_DEAL"
+							    class="main-nav__item-link">Top deals</a>
+							<!-- <div class="main-nav__item-wrapper">
+								<ul class="category-nav">
+									
+								</ul>
+							</div> -->
+							<div class="main-nav__cotainer-second-lvl">
+								<div class="main-nav__item-second-lvl">
+									<a class="main-nav__link-second main-nav__link-second_active" href="#">Top details Story</a>
+									<div class="main-nav__cotainer-third-lvl">
+										<div class="main-nav__item-third-lvl main-nav__item-third-lvl_have-child">
+											<a class="main-nav__link-third" href="#">
+												Not My Data and Lorem, ipsum dolor.
+											</a>
+										</div>
+										<div class="main-nav__item-third-lvl main-nav__item-third-lvl_have-child">
+											<a class="main-nav__link-third" href="#">
+												Not My Data and Lorem, ipsum dolor.
+											</a>
+										</div>
+										<div class="main-nav__item-third-lvl main-nav__item-third-lvl_have-child">
+											<a class="main-nav__link-third" href="#">
+												Not My Data and Lorem, ipsum dolor.
+											</a>
+										</div>
+										<div class="main-nav__item-third-lvl main-nav__item-third-lvl_have-child">
+											<a class="main-nav__link-third" href="#">
+												Not My Data and Lorem, ipsum dolor.
+											</a>
+										</div>
+										<div class="main-nav__item-third-lvl main-nav__item-third-lvl_have-child">
+											<a class="main-nav__link-third" href="#">
+												Not My Data and Lorem, ipsum dolor.
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="main-nav__item-second-lvl">
+									<a class="main-nav__link-second" href="#">Top details Facts</a>
+								</div>
+								<div class="main-nav__item-second-lvl">
+									<a class="main-nav__link-second" href="#">Top details and Values</a>
+								</div>
+								<div class="main-nav__item-second-lvl">
+									<a class="main-nav__link-second" href="#">Top details & Products</a>
+								</div>
+								<div class="main-nav__item-second-lvl">
+									<a class="main-nav__link-second" href="#">Top details Communities</a>
+								</div>
+								<div class="main-nav__item-second-lvl">
+									<a class="main-nav__link-second" href="#">Top details Events</a>
+								</div>
+							</div>	
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+							<a href="/en/about-amway" class="main-nav__item-link">About Amway</a>
+							<div class="main-nav__item-wrapper">
+								<ul class="category-nav">
+								</ul>
+							</div>
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+							<a href="/en/business-opportunity" class="main-nav__item-link">Business Opportunity</a>
+							<div class="main-nav__item-wrapper">
+								<ul class="category-nav">
+								</ul>
+							</div>
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+							<a href="/en/business-info" class="main-nav__item-link">BusinessInfo</a>
+							<div class="main-nav__item-wrapper">
+								<ul class="category-nav">
+									<!-- <li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
+											<i class="icon icon_amway-icons-left-arrowhead"></i>
+											Nutrition<i class="icon icon_amway-icons-right-arrowhead"></i>
+										</span>
+									</li>
+									<li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
+											<i class="icon icon_amway-icons-left-arrowhead"></i>
+											Nutrition<i class="icon icon_amway-icons-right-arrowhead"></i>
+										</span>
+									</li>
+									<li class="category-nav__item js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
+											<i class="icon icon_amway-icons-left-arrowhead"></i>
+											Nutrition<i class="icon icon_amway-icons-right-arrowhead"></i>
+										</span>
+									</li> -->
+								</ul>
+							</div>
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+						</li>
+						<li class="main-nav__item js-main-nav-item">
 						</li>
 					</ul>
+					<ul class="main-nav main-nav--bottom js-main-nav">
+						<li class="main-nav__item js-main-nav-item">
+						</li>
+						<li class="main-nav__item js-main-nav-item">
+							<div class="main-nav__item-wrapper main-nav__item-wrapper--language">
+								<ul class="category-nav">
+									<li class="category-nav__item category-nav__item--language js-category-nav__item">
+										<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
+											<i class="icon icon_amway-icons-left-arrowhead"></i>
+											Language<i class="icon icon_amway-icons-right-arrowhead"></i>
+										</span>
+										<div class="category-nav__item-wrapper js-category-nav__item-wrapper js-lang-sidebar"></div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="nav-profile js-nav-profile hidden">
+						<div class="user-area__list-item user-area__list-item--myprofile js-nav-profile-closer">
+							<i class="icon icon_amway-icons-left-arrowhead"></i>My profile</div>
+					</div>
+					<span role="button" class="sidebar-toggle-btn js-mobile-nav-toggle-btn">
+						<i class="icon icon_amway-icons-hamburger"></i>
+						<i class="icon icon_amway-icons-cancel"></i>
+					</span>
 				</div>
-				<ul class="main-nav js-main-nav">
-					<li class="main-nav__item js-main-nav-item">
-						<a href="#" class="main-nav__item-link js-main-nav__item-link">
-			<i class="icon icon_amway-icons-hamburger"></i> Shop<i class="icon icon_amway-icons-open"></i><i class="icon icon_amway-icons-minimize"></i>
-		</a>
-						<div class="main-nav__item-wrapper">
-							<ul class="category-nav">
-								<li class="category-nav__item js-category-nav__item">
-									<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							Nutrition<i class="icon icon_amway-icons-right-arrowhead"></i>
-						</span>
-									<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
-										<div class="sub-category-col">
-											<span class="sub-category-title " data-attr="Cat1SubCatLevel1">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							<a class="sub-category-title__link" href="/en">Explore Nutrition</a>
-							<i class="icon icon_amway-icons-right-arrowhead"></i>
-						  </span>
-											<div class="sub-category-nav">
-												<div class="mega-menu-banner">
-	
-													<div class="mega-menu-banner__background">
-														<picture>
-															<source media="(max-width: 767px)" srcset="/medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w4ODk4NXxpbWFnZS9wbmd8aW1hZ2VzL2hlYi9oOGUvODc5NjE4ODUwODE5MC5wbmd8NGU2ZmFkZjFhOTE3MjgzMGZlYjU3OTk0YjUzYjBhN2ZiMjQwMWI3ZThhODE2ODNjOTRjMDBkNGVhNDAyMGFjMQ, /medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MzU1NXxpbWFnZS9wbmd8aW1hZ2VzL2g2ZC9oZmYvODc5NjE4ODU3MzcyNi5wbmd8OGM3ODExOGNjMzZjYzZhNjIyZDgwZjM1OGQyMzQwNjJkN2UyMmYzM2ExMjBlYjgzNjE5OTBiYmE4MWFmZjk3Yw 2x">
-															<source media="(max-width: 991px)" srcset="/medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w4ODk4NXxpbWFnZS9wbmd8aW1hZ2VzL2hlYi9oOGUvODc5NjE4ODUwODE5MC5wbmd8NGU2ZmFkZjFhOTE3MjgzMGZlYjU3OTk0YjUzYjBhN2ZiMjQwMWI3ZThhODE2ODNjOTRjMDBkNGVhNDAyMGFjMQ, /medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w4ODk4NXxpbWFnZS9wbmd8aW1hZ2VzL2hlYi9oOGUvODc5NjE4ODUwODE5MC5wbmd8NGU2ZmFkZjFhOTE3MjgzMGZlYjU3OTk0YjUzYjBhN2ZiMjQwMWI3ZThhODE2ODNjOTRjMDBkNGVhNDAyMGFjMQ 2x">
-															<source media="(max-width: 4000px)" srcset="/medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MzU1NXxpbWFnZS9wbmd8aW1hZ2VzL2g2ZC9oZmYvODc5NjE4ODU3MzcyNi5wbmd8OGM3ODExOGNjMzZjYzZhNjIyZDgwZjM1OGQyMzQwNjJkN2UyMmYzM2ExMjBlYjgzNjE5OTBiYmE4MWFmZjk3Yw, /medias/nutrition-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxODIyNzh8aW1hZ2UvcG5nfGltYWdlcy9oNWQvaGRmLzg3OTYxODg2MzkyNjIucG5nfDYyN2FiOGJlNmNkMjI4ZGQ0N2U1ZjI4NTIwYTA1ZjdkZjFlY2U2NzhjZGNjYjc3YjA0Y2RlNDA0ZTc3NjViMjI 2x">
-															<img class="sub-category-nav__banner-image" src="" alt="" title="" />
-														</picture>
-													</div>
-													<div class="mega-menu-banner__data mega-menu-banner__data--right">
-														<div class="mega-menu-banner__data-header amw-colored-text amw-colored-text--truvivity">
-															Grow, harvest and process plants on our own certified organic farms</div>
-														<div class="mega-menu-banner__data-controls">
-															<a href="/en/Nutrition/c/10239" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat1SubCatLevel2">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Featured<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item">
-													<a href="#" title="New">New</a></li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
-												<li class="sub-category-nav__item">
-												</li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Promotions">Promotions</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat1SubCatLevel3">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Categories<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="7">
-													<a href="/en/Foundational Food Supplements/c/10240" title="Foundational food supplements">Foundational food supplements</a></li>
-												<li class="sub-category-nav__item" data-products-num="7">
-													<a href="/en/Immune System/c/10242" title="Targeted food supplements">Targeted food supplements</a></li>
-												<li class="sub-category-nav__item" data-products-num="11">
-													<a href="/en/Active Lifestyle/c/10252" title="Active lifestyle">Active lifestyle</a></li>
-												<li class="sub-category-nav__item" data-products-num="5">
-													<a href="/en/Beauty from within/c/10251" title="Beauty from within">Beauty from within</a></li>
-												<li class="sub-category-nav__item" data-products-num="10">
-													<a href="/en/Food & Beverages/c/10262" title="Food and beverages">Food and beverages</a></li>
-												<li class="sub-category-nav__item" data-products-num="25">
-													<a href="/en/Weight Management/c/10253" title="Weight Management">Weight Management</a></li>
-												<li class="sub-category-nav__item" data-products-num="6">
-													<a href="/en/Accessories/c/10265" title="Accessories">Accessories</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat1SubCatLevel4">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Brands<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="30">
-													<a href="/en/NUTRIWAY™/c/brand_600" title="NUTRIWAY™">NUTRIWAY™</a></li>
-												<li class="sub-category-nav__item" data-products-num="7">
-													<a href="/en/XS™/c/brand_10007" title="XS™">XS™</a></li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="category-nav__item js-category-nav__item">
-									<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel2">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							Beauty<i class="icon icon_amway-icons-right-arrowhead"></i>
-						</span>
-									<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
-										<div class="sub-category-col">
-											<span class="sub-category-title " data-attr="Cat2SubCatLevel1">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							<a class="sub-category-title__link" href="/en">Explore Beauty</a>
-							<i class="icon icon_amway-icons-right-arrowhead"></i>
-						  </span>
-											<div class="sub-category-nav">
-												<div class="mega-menu-banner">
-	
-													<div class="mega-menu-banner__background">
-														<picture>
-															<source media="(max-width: 767px)" srcset="/medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyODIyMjB8aW1hZ2UvcG5nfGltYWdlcy9oYmEvaGM2Lzg3OTYxODc1MjUxNTAucG5nfGJlYjllZTlmOWFmODk3NzVmNThjNDZiYmM3YjJjZjMxYmNjNTZhOTQ1MWRiZGI2NDQwMTQxODgyYzBhYmVlYjY, /medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxNjkzNjJ8aW1hZ2UvcG5nfGltYWdlcy9oMjkvaGMwLzg3OTYxODc2MjM0NTQucG5nfDc4MGY2MTgxZWNmZmZjOGM5ZmU4ZGEzZDkyZGQ4MmI0ZWUwZjBmY2YzYThlZjZjMDEwOTgxMmE3YzNkNzEwZTA 2x">
-															<source media="(max-width: 991px)" srcset="/medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyODIyMjB8aW1hZ2UvcG5nfGltYWdlcy9oYmEvaGM2Lzg3OTYxODc1MjUxNTAucG5nfGJlYjllZTlmOWFmODk3NzVmNThjNDZiYmM3YjJjZjMxYmNjNTZhOTQ1MWRiZGI2NDQwMTQxODgyYzBhYmVlYjY, /medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyODIyMjB8aW1hZ2UvcG5nfGltYWdlcy9oYmEvaGM2Lzg3OTYxODc1MjUxNTAucG5nfGJlYjllZTlmOWFmODk3NzVmNThjNDZiYmM3YjJjZjMxYmNjNTZhOTQ1MWRiZGI2NDQwMTQxODgyYzBhYmVlYjY 2x">
-															<source media="(max-width: 4000px)" srcset="/medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxNjkzNjJ8aW1hZ2UvcG5nfGltYWdlcy9oMjkvaGMwLzg3OTYxODc2MjM0NTQucG5nfDc4MGY2MTgxZWNmZmZjOGM5ZmU4ZGEzZDkyZGQ4MmI0ZWUwZjBmY2YzYThlZjZjMDEwOTgxMmE3YzNkNzEwZTA, /medias/beauty-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MzE1MDR8aW1hZ2UvcG5nfGltYWdlcy9oMDIvaDM1Lzg3OTYxODc2NTYyMjIucG5nfGE2MmE3MmI4NTc5NGRhNzI0ODcxNzM3OWI4Y2E2MzM0NDFiOWMyNDJmNjAxZGQ3YTk0ZmI3MzZlZDBkYjQyZjE 2x">
-															<img class="sub-category-nav__banner-image" src="" alt="" title="" />
-														</picture>
-													</div>
-													<div class="mega-menu-banner__data mega-menu-banner__data--right">
-														<div class="mega-menu-banner__data-header amw-colored-text amw-colored-text--truvivity">
-															Grow, harvest and process plants on our own certified organic farms</div>
-														<div class="mega-menu-banner__data-controls">
-															<a href="/en/Beauty & Grooming/c/10013" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat2SubCatLevel2">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Categories<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="25">
-													<a href="/en/Hair Care/c/10047" title="Hair Care">Hair Care</a></li>
-												<li class="sub-category-nav__item" data-products-num="14">
-													<a href="/en/Bath and Body/c/10052" title="Bath and Body">Bath and Body</a></li>
-												<li class="sub-category-nav__item" data-products-num="11">
-													<a href="/en/Fragrances/c/10058" title="Fragrances">Fragrances</a></li>
-												<li class="sub-category-nav__item" data-products-num="8">
-													<a href="/en/Men's Grooming/c/10062" title="Men's Grooming">Men's Grooming</a></li>
-												<li class="sub-category-nav__item" data-products-num="8">
-													<a href="/en/Oral Care/c/10063" title="Oral Care">Oral Care</a></li>
-												<li class="sub-category-nav__item" data-products-num="49">
-													<a href="/en/Skincare/c/10136" title="Skincare">Skincare</a></li>
-												<li class="sub-category-nav__item" data-products-num="43">
-													<a href="/en/Make up/c/10143" title="Make-up">Make-up</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat2SubCatLevel3">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Featured<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item">
-													<a href="#" title="New">New</a></li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
-												<li class="sub-category-nav__item">
-												</li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Promotions">Promotions</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat2SubCatLevel4">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Brands<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="5">
-													<a href="/en/ARTISTRY Intensive Skincare™/c/brand_10004" title="ARTISTRY Intensive Skincare™">ARTISTRY Intensive Skincare™</a></li>
-												<li class="sub-category-nav__item" data-products-num="12">
-													<a href="/en/ARTISTRY Youth Xtend™/c/brand_10008" title="ARTISTRY Youth Xtend™">ARTISTRY Youth Xtend™</a></li>
-												<li class="sub-category-nav__item" data-products-num="6">
-													<a href="/en/essentials by ARTISTRY™/c/brand_10069" title="essentials by ARTISTRY™">essentials by ARTISTRY™</a></li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="category-nav__item js-category-nav__item">
-									<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel3">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							Home Life<i class="icon icon_amway-icons-right-arrowhead"></i>
-						</span>
-									<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel1">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Categories<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="10">
-													<a href="/en/Surface Care/c/10070" title="Surface Care">Surface Care</a></li>
-												<li class="sub-category-nav__item" data-products-num="16">
-													<a href="/en/Laundry Care/c/10067" title="Laundry Care">Laundry Care</a></li>
-												<li class="sub-category-nav__item" data-products-num="4">
-													<a href="/en/Dish Care/c/10077" title="Dish Care">Dish Care</a></li>
-												<li class="sub-category-nav__item" data-products-num="26">
-													<a href="/en/Cookware and cutlery/c/10080" title="Cookware and cutlery">Cookware and cutlery</a></li>
-												<li class="sub-category-nav__item" data-products-num="2">
-													<a href="/en/Auxiliary Cleaning/c/10079" title="Auxiliary cleaning">Auxiliary cleaning</a></li>
-												<li class="sub-category-nav__item" data-products-num="11">
-													<a href="/en/Water Treatment System/c/10084" title="Water Treatment System">Water Treatment System</a></li>
-												<li class="sub-category-nav__item" data-products-num="8">
-													<a href="/en/Dispensers and Applicators/c/10078" title="Dispensers and Applicators">Dispensers and Applicators</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel2">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							<a class="sub-category-title__link" href="/en">Explore Home</a>
-							<i class="icon icon_amway-icons-right-arrowhead"></i>
-						  </span>
-											<div class="sub-category-nav">
-												<div class="mega-menu-banner">
-	
-													<div class="mega-menu-banner__background">
-														<picture>
-															<source media="(max-width: 767px)" srcset="/medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wzMTUzOTZ8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaGY5Lzg3OTYxODc5MTgzNjYucG5nfGRjOGUxN2U0NDA2MzZiZDkxMmNiNjQwNmZmZTVjNWVhN2U4MTllMTJjMWU0YjBjNTIyZWNiYTljZjc0YjgwMjk, /medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxODE2MTB8aW1hZ2UvcG5nfGltYWdlcy9oMzIvaDkzLzg3OTYxODc5ODM5MDIucG5nfGEyYzkwYWY5MWUwZjZlZmI4OTdkNGZlNjBmMzc4YWQ5NmExM2NlMjI5MGZiYTQxZmI1OTRiYzRmNDZjNGQ1ODc 2x">
-															<source media="(max-width: 991px)" srcset="/medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wzMTUzOTZ8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaGY5Lzg3OTYxODc5MTgzNjYucG5nfGRjOGUxN2U0NDA2MzZiZDkxMmNiNjQwNmZmZTVjNWVhN2U4MTllMTJjMWU0YjBjNTIyZWNiYTljZjc0YjgwMjk, /medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wzMTUzOTZ8aW1hZ2UvcG5nfGltYWdlcy9oZmIvaGY5Lzg3OTYxODc5MTgzNjYucG5nfGRjOGUxN2U0NDA2MzZiZDkxMmNiNjQwNmZmZTVjNWVhN2U4MTllMTJjMWU0YjBjNTIyZWNiYTljZjc0YjgwMjk 2x">
-															<source media="(max-width: 4000px)" srcset="/medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxODE2MTB8aW1hZ2UvcG5nfGltYWdlcy9oMzIvaDkzLzg3OTYxODc5ODM5MDIucG5nfGEyYzkwYWY5MWUwZjZlZmI4OTdkNGZlNjBmMzc4YWQ5NmExM2NlMjI5MGZiYTQxZmI1OTRiYzRmNDZjNGQ1ODc, /medias/homelife-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w2MTc5MjF8aW1hZ2UvcG5nfGltYWdlcy9oNDAvaDYwLzg3OTYxODgwNDk0MzgucG5nfDZjNDMzODQxZDI0NjRkYzI0MmU4NDUxY2U3OTM2YTEzODdlYzA2MjA1ZjlkNGFlNjhjNGI4NmZjYzU2M2I1NmI 2x">
-															<img class="sub-category-nav__banner-image" src="" alt="" title="" />
-														</picture>
-													</div>
-													<div class="mega-menu-banner__data mega-menu-banner__data--right">
-														<div class="mega-menu-banner__data-header amw-colored-text amw-colored-text--truvivity">
-															Grow, harvest and process plants on our own certified organic farms</div>
-														<div class="mega-menu-banner__data-controls">
-															<a href="/en/Home/c/10066" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel3">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Featured<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item">
-													<a href="#" title="New">New</a></li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
-												<li class="sub-category-nav__item">
-												</li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Promotions">Promotions</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat3SubCatLevel4">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Brands<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="11">
-													<a href="/en/eSpring™/c/brand_400" title="eSpring™">eSpring™</a></li>
-												<li class="sub-category-nav__item" data-products-num="26">
-													<a href="/en/iCook™/c/brand_300" title="iCook™">iCook™</a></li>
-												<li class="sub-category-nav__item" data-products-num="39">
-													<a href="/en/Amway Home™/c/brand_10005" title="Amway Home™">Amway Home™</a></li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="category-nav__item js-category-nav__item">
-									<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel4">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							More Products<i class="icon icon_amway-icons-right-arrowhead"></i>
-						</span>
-									<div class="category-nav__item-wrapper js-category-nav__item-wrapper">
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel1">
-							<i class="icon icon_amway-icons-left-arrowhead"></i>
-							<a class="sub-category-title__link" href="/en">Explore More Products</a>
-							<i class="icon icon_amway-icons-right-arrowhead"></i>
-						  </span>
-											<div class="sub-category-nav">
-												<div class="mega-menu-banner">
-	
-													<div class="mega-menu-banner__background">
-														<picture>
-															<source media="(max-width: 767px)" srcset="/medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MTY0MTh8aW1hZ2UvcG5nfGltYWdlcy9oYzIvaDVkLzg3OTYxODg5MDE0MDYucG5nfGQ2ZjY1YmQ2Nzc2NWMwMjI2M2Y3ZmU0Y2IwMzI0YTRiMjYzNjkxNTM1ZTg5ODE3NDJjZWFhM2JhMTM0YzU5Njk, /medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyOTU2NTB8aW1hZ2UvcG5nfGltYWdlcy9oNzIvaGMyLzg3OTYxODg5NjY5NDIucG5nfGEzYjJjZjBlOTQ5OTE2MDgyOWZhOTc3N2I0NjhkNTI0ODZkM2Q5Yzg1ZGYyYzc2NzUxOTA0ZmRjZmMwZDAzZjc 2x">
-															<source media="(max-width: 991px)" srcset="/medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MTY0MTh8aW1hZ2UvcG5nfGltYWdlcy9oYzIvaDVkLzg3OTYxODg5MDE0MDYucG5nfGQ2ZjY1YmQ2Nzc2NWMwMjI2M2Y3ZmU0Y2IwMzI0YTRiMjYzNjkxNTM1ZTg5ODE3NDJjZWFhM2JhMTM0YzU5Njk, /medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3w1MTY0MTh8aW1hZ2UvcG5nfGltYWdlcy9oYzIvaDVkLzg3OTYxODg5MDE0MDYucG5nfGQ2ZjY1YmQ2Nzc2NWMwMjI2M2Y3ZmU0Y2IwMzI0YTRiMjYzNjkxNTM1ZTg5ODE3NDJjZWFhM2JhMTM0YzU5Njk 2x">
-															<source media="(max-width: 4000px)" srcset="/medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wyOTU2NTB8aW1hZ2UvcG5nfGltYWdlcy9oNzIvaGMyLzg3OTYxODg5NjY5NDIucG5nfGEzYjJjZjBlOTQ5OTE2MDgyOWZhOTc3N2I0NjhkNTI0ODZkM2Q5Yzg1ZGYyYzc2NzUxOTA0ZmRjZmMwZDAzZjc, /medias/personalcare-navigation-banner-02.png?context=bWFzdGVyfGltYWdlc3wxMTEwMDQ3fGltYWdlL3BuZ3xpbWFnZXMvaDU2L2gwMC84Nzk2MTg5MDMyNDc4LnBuZ3w0Y2ZhMzE3YjBjYzVhYzljNmMwZDFhZjRlMzQyNzM2YWI2NDRkNGFiMmE4NmZmZmM2NjYwY2Q2OTY5MzdlMTM0 2x">
-															<img class="sub-category-nav__banner-image" src="" alt="" title="" />
-														</picture>
-													</div>
-													<div class="mega-menu-banner__data mega-menu-banner__data--right">
-														<div class="mega-menu-banner__data-header amw-colored-text amw-colored-text--truvivity">
-															Grow, harvest and process plants on our own certified organic farms</div>
-														<div class="mega-menu-banner__data-controls">
-															<a href="/en/More Products/c/10086" class="btn-amway btn-amway--home  amw-colored-text	amw-colored-text--truvivity">Explore now</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel2">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Categories<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="2">
-													<a href="/en/Amway - One by One/c/10095" title="Amway - One by One">Amway - One by One</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel3">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Brands<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item" data-products-num="39">
-													<a href="/en/Amway Home™/c/brand_10005" title="Amway Home™">Amway Home™</a></li>
-											</ul>
-										</div>
-										<div class="sub-category-col">
-											<span class="sub-category-title js-sub-category-title" data-attr="Cat4SubCatLevel4">
-														<i class="icon icon_amway-icons-left-arrowhead"></i>
-														Featured<i
-														class="icon icon_amway-icons-right-arrowhead"></i>
-													</span>
-											<ul class="sub-category-nav js-sub-category-nav list-2-col">
-	
-												<li class="sub-category-nav__item">
-													<a href="#" title="New">New</a></li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Best Sellers / Top 10">Best Sellers / Top 10</a></li>
-												<li class="sub-category-nav__item">
-												</li>
-												<li class="sub-category-nav__item">
-													<a href="#" title="Promotions">Promotions</a></li>
-											</ul>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-						<a href="/en/category/Shop/c/100000?q=:relevance:product_labels:DISCOUNT:product_labels:PV_PROMOTION:product_labels:GIFT_WITH_PURCHASE:product_labels:SPECIAL_DEAL"
-							class="main-nav__item-link">Top deals</a>
-						<div class="main-nav__item-wrapper">
-							<ul class="category-nav">
-							</ul>
-						</div>
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-						<a href="/en/about-amway" class="main-nav__item-link">About Amway</a>
-						<div class="main-nav__item-wrapper">
-							<ul class="category-nav">
-							</ul>
-						</div>
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-						<a href="/en/business-opportunity" class="main-nav__item-link">Business Opportunity</a>
-						<div class="main-nav__item-wrapper">
-							<ul class="category-nav">
-							</ul>
-						</div>
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-						<a href="/en/business-info" class="main-nav__item-link">BusinessInfo</a>
-						<div class="main-nav__item-wrapper">
-							<ul class="category-nav">
-							</ul>
-						</div>
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-				</ul>
-				<ul class="main-nav main-nav--bottom js-main-nav">
-					<li class="main-nav__item js-main-nav-item">
-					</li>
-					<li class="main-nav__item js-main-nav-item">
-						<div class="main-nav__item-wrapper main-nav__item-wrapper--language">
-							<ul class="category-nav">
-								<li class="category-nav__item category-nav__item--language js-category-nav__item">
-									<span class="category-nav__item-link js-category-nav__item-link" data-attr="MegaMenuCategoryLevel1">
-										<i class="icon icon_amway-icons-left-arrowhead"></i>
-										Language<i class="icon icon_amway-icons-right-arrowhead"></i>
-									</span>
-									<div class="category-nav__item-wrapper js-category-nav__item-wrapper js-lang-sidebar"></div>
-								</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-				<div class="nav-profile js-nav-profile hidden">
-					<div class="user-area__list-item user-area__list-item--myprofile js-nav-profile-closer">
-						<i class="icon icon_amway-icons-left-arrowhead"></i>My profile</div>
-				</div>
-				<span role="button" class="sidebar-toggle-btn js-mobile-nav-toggle-btn">
-					<i class="icon icon_amway-icons-hamburger"></i>
-					<i class="icon icon_amway-icons-cancel"></i>
-				</span>
 			</div>
-		</div>
-	</nav>
+		</nav>
+
+	</div>
 	<p>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam sit magni alias. Quod sit iusto ut sint nesciunt totam alias accusantium adipisci? Deleniti, in vero. Reprehenderit ad temporibus, nobis alias repudiandae cum praesentium asperiores error quas, incidunt ratione porro tenetur nostrum recusandae neque necessitatibus quisquam, tempore assumenda dolor? Quod dicta nisi quasi commodi, fugiat consequuntur pariatur exercitationem, dignissimos vitae rerum ratione delectus recusandae dolores! Autem quas cum at ab hic, neque accusamus fuga eligendi sit tempore earum, cupiditate, adipisci sint unde laboriosam laborum ea minus laudantium repellendus numquam. Atque enim tempora corrupti labore sequi id tempore laborum sint, sed placeat, incidunt, aliquid iure voluptatum doloremque numquam possimus explicabo hic ipsa officia assumenda architecto obcaecati. Laudantium libero minima ipsa temporibus possimus animi assumenda, totam ullam perspiciatis nisi debitis eligendi nobis, molestiae aliquam deserunt nesciunt quia explicabo molestias vitae nemo aspernatur velit quas, eius nulla. Quis saepe in impedit nam non doloribus vero libero unde eveniet pariatur dolores sunt fugiat consequatur sit quod quia, vitae sed numquam error obcaecati nisi. Quaerat magni nihil iusto nulla dolorem dolorum molestiae at et delectus aut aliquam incidunt repudiandae dolore mollitia eos velit ipsam perferendis, consectetur sequi enim autem praesentium suscipit! Dolore dolores fuga delectus in? PoC
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam sit magni alias. Quod sit iusto ut sint nesciunt totam
+		alias accusantium adipisci? Deleniti, in vero. Reprehenderit ad temporibus, nobis alias repudiandae cum praesentium asperiores
+		error quas, incidunt ratione porro tenetur nostrum recusandae neque necessitatibus quisquam, tempore assumenda dolor? Quod
+		dicta nisi quasi commodi, fugiat consequuntur pariatur exercitationem, dignissimos vitae rerum ratione delectus recusandae
+		dolores! Autem quas cum at ab hic, neque accusamus fuga eligendi sit tempore earum, cupiditate, adipisci sint unde laboriosam
+		laborum ea minus laudantium repellendus numquam. Atque enim tempora corrupti labore sequi id tempore laborum sint, sed
+		placeat, incidunt, aliquid iure voluptatum doloremque numquam possimus explicabo hic ipsa officia assumenda architecto
+		obcaecati. Laudantium libero minima ipsa temporibus possimus animi assumenda, totam ullam perspiciatis nisi debitis eligendi
+		nobis, molestiae aliquam deserunt nesciunt quia explicabo molestias vitae nemo aspernatur velit quas, eius nulla. Quis
+		saepe in impedit nam non doloribus vero libero unde eveniet pariatur dolores sunt fugiat consequatur sit quod quia, vitae
+		sed numquam error obcaecati nisi. Quaerat magni nihil iusto nulla dolorem dolorum molestiae at et delectus aut aliquam
+		incidunt repudiandae dolore mollitia eos velit ipsam perferendis, consectetur sequi enim autem praesentium suscipit! Dolore
+		dolores fuga delectus in? PoC
 	</p>
 
 	<div class="double-border">
-		lorem	
+		lorem
 	</div>
 
 	<link rel="stylesheet" href="css/styles.css">
